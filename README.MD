@@ -22,10 +22,36 @@ Uma biblioteca é um arquivo de JavaScript que contém um monte de funções, e 
 
 ### 1. Instalação
 
+Adicionar o script abaixo no header do documento index.html
+
+```script
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+````
+
+### 2. Preparar o documento
+
+O código abaixo deve ser adicionado logo no ínicio do código jQuery. Esse comando verifica se documento já foi carregado e é considerado uma boa prática.
+
+```jquery
+
+$('document').ready(function() {
+    Código aqui
+});
+
+```
+### 3. Sintaxe Principal 
+
 
 
 ```jquery
-Sintaxe Principal:
 
 $('seletor').ação();
+
 ```
+---
+
+## Principais Eventos e Efeitos
+
+

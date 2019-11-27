@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Adicionando Estilos com jQuery</title>
-</head>
-<body>
-  <!-- Aqui começaremos a falar sobre como adicionar estilos -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Adicionando Estilos com jQuery</title>
+  </head>
+
+  <style>
+    .card {
+      background-color: red;
+    }
+  </style>
+
+  <body>
+    <!-- Aqui começaremos a falar sobre como adicionar estilos -->
+    <div>
+      <h1>Olá Mundo</h1>
+      <button>Adicionar Efeito</button>
+    </div>
+  </body>
+
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("div").addClass("card");
+      });
+    });
+  </script>
 </html>
