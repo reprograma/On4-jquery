@@ -1,3 +1,5 @@
+![jQuery Illustration](https://www.tutorialrepublic.com/lib/images/jquery-illustration.png)
+
 # Introdução ao jQuery
 
 O jQuery é uma biblioteca JavaScript capaz de adicionar interatividade e dinamismo às páginas web com objetivo de fazer isso de forma simplificada, o que é aderente ao seu lema que é Write less, do more. A biblioteca foi criada dentro dos Padrões Web estipulados pela W3C, por este motivo é uma biblioteca multi-plataforma, ou seja, é compatível com qualquer navegador de internet.Dê uma conferida na documentação oficial no site deles: [jQuery.com](https://jquery.com/).
