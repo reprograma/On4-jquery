@@ -94,7 +94,7 @@ Os métodos de evento acionam ou anexam uma função a um manipulador de eventos
 A lista completa com os eventos disponíveis no jQuery pode ser vista aqui: [Lista de Eventos](https://www.w3schools.com/jquery/jquery_ref_events.asp).
 
 ---
-
+![Coding!](https://hackernoon.com/hn-images/1*ssqdxxOFwHSwpTAquq5h5Q.jpeg)
 
 
 ## Exercícios Parte 1 
