@@ -93,9 +93,31 @@ Os métodos de evento acionam ou anexam uma função a um manipulador de eventos
 
 A lista completa com os eventos disponíveis no jQuery pode ser vista aqui: [Lista de Eventos](https://www.w3schools.com/jquery/jquery_ref_events.asp).
 
+---
 
 
 
+## Exercícios Parte 1 
 
+Adicionar o jQuery via CDN e incluir JS interno e externo.
 
+* Aula 1 - Capturar elemento, mostrar no console e alert
+* Aula 2 - Hide, Show e Toggle
+* Aula 3 - Adicionar Classes (CSS, addClass e removeClass)
+* Aula 4 - Efeitos fadeIn, fadeOut, etc
+* Aula 5 - Ações em Formulários usando teclado e mouse
 
+---
+
+## Exercícios Parte 2
+
+Parte da tarde
+
+* Aula 6 - Menu Dropdown
+* Aula 7 - To Do List
+
+---
+
+### Lição de Casa
+
+Criar um slide de fotos simple
