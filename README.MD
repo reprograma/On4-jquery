@@ -14,13 +14,14 @@ Uma biblioteca é um arquivo de JavaScript que contém um monte de funções, e 
 
 1. jQuery promove simplicidade
 2. Os elementos do jQuery são exibidos mesmo quando o JavaScript está desabilitado
-3. O jQuery integra-se facilmente ao IDE do Visual Studio
-4. jQuery faz aplicativos animados
-5. As páginas do jQuery são carregadas mais rapidamente
+3. jQuery faz aplicativos animados
+4. As páginas do jQuery são carregadas mais rapidamente
 
 ## O que é DOM?
 
-Um dos mais importantes aspectos do JavaScript e desse modo jQuery, é a manipulação do **DOM**. O DOM significa **Document Object Model**, em português Modelo de Objeto de Documento, e é um mecanismo para representação e interação com nossos documentos HTML, XHTML ou XML
+Um dos mais importantes aspectos do JavaScript e desse modo jQuery, é a manipulação do **DOM**. O DOM significa **Document Object Model**, em português Modelo de Objeto de Documento, e é um mecanismo para representação e interação com nossos documentos HTML, XHTML ou XML.
+
+![Dom](https://i.imgur.com/lu4PMfw.jpg)
 
 ---
 
