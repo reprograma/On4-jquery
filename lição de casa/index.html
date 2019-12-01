@@ -21,11 +21,10 @@
       />
       <div class="incompletas">
         <h3>Tarefas</h3>
-        
       </div>
 
       <div class="completas">
-        <h3>Concluídas</h3>
+        <h3>Tarefas Concluídas</h3>
       </div>
     </div>
 
@@ -39,7 +38,9 @@
             );
             let deletar = $("<i class='fas fa-trash-alt'></i>").click(
               function() {
-                $(this).parent().remove()                  
+                $(this)
+                  .parent()
+                  .remove();
               }
             );
 

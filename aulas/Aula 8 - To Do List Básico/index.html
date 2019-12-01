@@ -24,9 +24,6 @@
         
       </div>
 
-      <!-- <div class="completas">
-        <h3>Concluídas</h3>
-      </div> -->
     </div>
 
     <script type="text/javascript">
@@ -34,8 +31,7 @@
         $(".addTarefa").on("keyup", function(e) {
           //13  SIGNIFICA ENTER
           if (e.keyCode == 13 && $(".addTarefa").val() != "") {
-            let tarefa = $("<div class='tarefa'></div>").text(
-              $(".addTarefa").val()
+            let tarefa = $("<div class='tarefa'></div>").text($(".addTarefa").val()
             );
             let deletar = $("<i class='fas fa-trash-alt'></i>").click(
               function() {

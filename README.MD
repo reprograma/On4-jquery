@@ -122,4 +122,4 @@ Parte da tarde
 
 ### Lição de Casa
 
-Criar um slide de fotos simples
+Aprimorar o To Do List, adicionando um botão para completar e mover para a Div Tarefas Concluídas.
