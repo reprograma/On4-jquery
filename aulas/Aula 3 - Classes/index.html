@@ -9,20 +9,33 @@
   </head>
 
   <style>
-    .card {
-      background-color: red;
+    .btn {
+      border: none;
+      background-color: #555584;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
     }
   </style>
 
   <body>
-    
     <div>
-      <h1>Olá Mundo</h1>
+      <h1>Turma On4 jQuery</h1>
+      <p>Vem Natal pq nós queremos comer</p>
       <button>Adicionar Efeito</button>
     </div>
   </body>
 
   <script>
-  
+    $(document).ready(function() {
+      $('button').mouseenter(function(){
+        $('button').addClass('btn').fadeIn('slow');
+      });
+
+      $('button').mouseleave(function(){
+        $('button').removeClass('btn')
+      });
+    });
   </script>
 </html>
