@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Efeito Browser x Efeito jQuery</title>
+    <title>Efeito Browser e Efeito DOM</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Eventos do browser -->
@@ -165,11 +165,31 @@
         quod blanditiis corrupti placeat? Pariatur, totam natus.
       </p>
       <div class="arrow-up">
-        <img src="img/chevron-arrow-up.png" alt="" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Green-Up-Arrow.svg/631px-Green-Up-Arrow.svg.png"
+          alt=""
+        />
       </div>
     </div>
     <script>
- 
+      $(window).scroll(function() {
+        if ($(this).scrollTop() >= 500) {
+          $(".arrow-up").fadeIn(2000);
+        } else {
+          $(".arrow-up").fadeOut(2000);
+        }
+      });
+
+      $(document).ready(function() {
+        $(".arrow-up").click(function() {
+          $("html, body").animate(
+            {
+              scrollTop: 0
+            },
+            2000
+          );
+        });
+      });
     </script>
   </body>
 </html>

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>Ações de Formulário com jQuery</title>
   </head>
   <body>
@@ -18,14 +19,46 @@
         <span class="erro2"></span>
         <p>Telefone: <input type="text" id="inputTelefone"></p>
         <span class="erro3"></span>
-        <button type="submit">Enviar</button>
-        
+        <button type="submit">Enviar</button>        
       </form>
     </div>
   </body>
 
     <script>
-      
+  
+      $(document).ready(function() {
+        $('button').click(function(e) {
+          // Previne o browser de reccaregar a página
+          e.preventDefault();
+
+          // Armazenei o valor digitado nos inputs em variáveis
+          let nome = $('#inputNome').val();
+          let email = $('#inputEmail').val();
+          let telefone = $('#inputTelefone').val();
+
+          // Verifiquei se a variável está vazia, se sim Mostrar msg, senão partir pra próxima validação
+          if (nome == '') {
+            $('.erro1').text('Favor preencher o nome.').css({'color': 'red', 'font-size': '14px'})
+            
+          } else if (email == '') {
+            $('.erro2').text('Favor preencher o e-mail.')
+
+          } else if (telefone == '') {
+            $('.erro3').text('Favor preencher o telefone.')
+
+          } else {
+            alert("Mensagem enviada com sucesso!")
+
+            // Limpar os inputs e os texts
+            $('#inputNome').val('')
+            $('#inputEmail').val('')
+            $('#inputTelefone').val('')
+            
+            $('.erro2').text('')
+            $('.erro3').text('')
+          }               
+        })
+      });
     </script>
   </body>
 </html>

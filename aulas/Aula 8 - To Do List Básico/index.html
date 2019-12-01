@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title></title>
@@ -21,13 +21,42 @@
       />
       <div class="incompletas">
         <h3>Tarefas</h3>
-        
+        <!-- <div class="tarefa">Limpar a casa<i class="fas fa-trash-alt"></i></div> -->
       </div>
 
+      <div class="completas">
+        <h3>Completas</h3>
+      </div>
     </div>
 
-    <script type="text/javascript">
-      
+    <script>
+      $(document).ready(function() {
+        $(".addTarefa").on("keyup", function(e) {
+          // 13 significa a tecla Enter e verifica se o input não está vazio
+          if (e.keyCode == 13 && $(".addTarefa").val() != "") {
+            //Armazenei a div criada em jQuery + o valor digitado no input na variável TAREFA
+            let tarefa = $('<div class="tarefa"></div>').text(
+              $(".addTarefa").val()
+            );
+
+            // Armazenei o ícone lixo dentro da variável Deletar (ícone do fontawesome) + Função Deletar ao clicar
+            let deletar = $('<i class="fas fa-trash-alt"></i>').click(
+              function() {
+                // This se refere ao elemento clicado
+                $(this).parent().remove();
+              }
+            );
+            // Adicionei o ícone à div TAREFA
+            tarefa.append(deletar);
+
+            // Adicionei a variável TAREFA à Div Incompletas
+            $(".incompletas").append(tarefa);
+
+            // Limpar o valor do input após o enter
+            $(".addTarefa").val("");
+          }
+        });
+      });
     </script>
   </body>
 </html>

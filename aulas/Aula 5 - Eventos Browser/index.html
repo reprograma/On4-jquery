@@ -23,10 +23,20 @@
 
   <body>
     <div class="container">
-      <img src="bubbles-citrus-citrus-fruit-close-up-556414.jpg" />
+      <img src="images.jpg" />
       <button>Clique aqui</button>
     </div>
 
-    <script></script>
+    <script>
+      $(window).scroll(function(){
+        $('img').fadeOut(2000)
+      });
+
+      $(document).ready(function() {
+        $("button").click(function() {
+          $("img").fadeOut(2000);
+        });
+      });
+    </script>
   </body>
 </html>
