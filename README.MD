@@ -122,4 +122,13 @@ Parte da tarde
 
 ### Lição de Casa
 
-Aprimorar o To Do List, adicionando um botão para completar e mover para a Div Tarefas Concluídas.
+* Programa de Calcular Média
+
+Instruções:
+- Declarar as variáveis do Input Nota 1, Nota 2 e Média
+
+- Capturar os valores do Input Nota 1, Nota 2 e Média. Dica: usar **parseInt** para retornar o valor do input um número inteiro
+
+- Calcular a média e mostrar no Input Média
+
+EXTRA: Para quem quiser, pode aprimorar o To Do List movendo as tarefas concluídas para uma nova div =D
