@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Efeito Browser x Efeito jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Eventos do browser -->
+</head>
+
+<style>
+    * {
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="bubbles-citrus-citrus-fruit-close-up-556414.jpg" />
+        <button>Clique aqui</button>
+    </div>
+    <script>
+        // Efeito Browser
+        $(window).scroll(function () {
+            $("img").fadeOut("1000");
+        });
+
+        // Efeito jQuery
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("img").fadeOut("1000");
+            });
+        });
+    </script>
+  
+</body>
+
+</html>

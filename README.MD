@@ -105,7 +105,7 @@ Adicionar o jQuery via CDN e incluir JS interno e externo.
 * Aula 2 - Hide, Show e Toggle
 * Aula 3 - Adicionar Classes (CSS, addClass e removeClass)
 * Aula 4 - Efeitos fadeIn, fadeOut, etc
-* Aula 5 - Ações em Formulários usando teclado e mouse
+
 
 ---
 
@@ -113,11 +113,13 @@ Adicionar o jQuery via CDN e incluir JS interno e externo.
 
 Parte da tarde
 
-* Aula 6 - Menu Dropdown
-* Aula 7 - To Do List
+* Aula 5 - Eventos Browser x Eventos jQuery
+* Aula 6 - Ações em Formulários usando teclado e mouse
+* Aula 7 - Menu Dropdown
+* Aula 8 - To Do List
 
 ---
 
 ### Lição de Casa
 
-Criar um slide de fotos simple
+Criar um slide de fotos simples

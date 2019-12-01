@@ -1,17 +1,16 @@
 $(document).ready(function() {
-  $("#menu li a").click(function(e) {
-    e.preventDefault()
-    let index = $("#menu li a").index(this);
+  $("#menu li a").mouseover(function() {
+    let menu = $("#menu li a").index(this);
     $("#menu li")
-      .eq(index)
+      .eq(menu)
       .children("ul")
       .slideDown();
   });
 
   $("#menu li").mouseleave(function() {
-    let index = $("#menu li").index(this);
+    let menu = $("#menu li").index(this);
     $("#menu li")
-      .eq(index)
+      .eq(menu)
       .children("ul")
       .slideUp();
   });

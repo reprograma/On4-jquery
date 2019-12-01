@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Ações de Formulário com jQuery</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Entre em contato</h1>
+      <form action="">
+        <p>Nome: <input type="text" id="inputNome"></p>
+        <span class="erro1"></span>
+        <p>E-mail: <input type="text" id="inputEmail"></p>
+        <span class="erro2"></span>
+        <p>Telefone: <input type="text" id="inputTelefone"></p>
+        <span class="erro3"></span>
+        <button type="submit">Enviar</button>
+        
+      </form>
+    </div>
+  </body>
+
+    <script>
+      $(document).ready(function() {
+        $("input").keydown(function() {
+          $("input").css("background-color", "yellow");
+        });
+        $("input").keyup(function() {
+          $("input").css("background-color", "pink");
+        });
+
+        $('button').on('click', function(e){
+          e.preventDefault()
+          let nome = $('#inputNome').val();
+          let email = $('#inputEmail').val();
+          let telefone = $('#inputTelefone').val();
+          if (nome == '') {
+            $('.erro1').text('Favor preencher o nome')
+          }
+          else if (email == '') {
+            $('.erro2').text('Favor preencher o email')
+          }
+          else if (telefone == '') {
+            $('.erro3').text('Favor preencher o telefone')
+          }
+          else {
+            alert('Formulário Enviado com Sucesso')
+            $('#inputNome').val('')
+            $('#inputEmail').val('')
+            $('#inputTelefone').val('')
+           }
+        })       
+      });
+    </script>
+  </body>
+</html>

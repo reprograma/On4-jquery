@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  background-color: lavender;
+  font-family: "Raleway", sans-serif;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: royalblue;
+  border: none;
+  padding: 20px 30px;
+  color: aliceblue;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: blueviolet;
+  transition: 1s;
+}
+
+.div1,
+.div2,
+.div3 {
+  width: 330px;
+  padding: 15px;
+  background-color: tomato;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
