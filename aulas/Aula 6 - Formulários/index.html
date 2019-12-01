@@ -25,36 +25,7 @@
   </body>
 
     <script>
-      $(document).ready(function() {
-        $("input").keydown(function() {
-          $("input").css("background-color", "yellow");
-        });
-        $("input").keyup(function() {
-          $("input").css("background-color", "pink");
-        });
-
-        $('button').on('click', function(e){
-          e.preventDefault()
-          let nome = $('#inputNome').val();
-          let email = $('#inputEmail').val();
-          let telefone = $('#inputTelefone').val();
-          if (nome == '') {
-            $('.erro1').text('Favor preencher o nome')
-          }
-          else if (email == '') {
-            $('.erro2').text('Favor preencher o email')
-          }
-          else if (telefone == '') {
-            $('.erro3').text('Favor preencher o telefone')
-          }
-          else {
-            alert('Formulário Enviado com Sucesso')
-            $('#inputNome').val('')
-            $('#inputEmail').val('')
-            $('#inputTelefone').val('')
-           }
-        })       
-      });
+    
     </script>
   </body>
 </html>

@@ -13,8 +13,8 @@ body {
 .container {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-  width: 800px;
-  margin: auto;
+  width: 250px;
+  margin: 0 auto;
   padding: 20px;
   position: absolute;
   top: 50%;
@@ -23,7 +23,7 @@ body {
   border-radius: 10px;
 }
 
-.addTarefa {
+input {
   width: 100%;
   border: none;
   border-bottom: 3px solid #000;
@@ -37,7 +37,7 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 h3 {
@@ -48,21 +48,20 @@ input {
   margin-bottom: 20px;
 }
 
-.tarefa {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 18px;
-  margin: 6px 0;
-  overflow: hidden;
-}
-
-.tarefa i {
-  float: right;
-  margin-left: 20px;
+button {
+  background-color: royalblue;
+  border: none;
+  padding: 15px;
+  color: aliceblue;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
   cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+  line-height: 25px;
 }
 
-.completas .tarefa {
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-}
+
+

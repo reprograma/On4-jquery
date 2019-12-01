@@ -27,26 +27,7 @@
     </div>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-        $(".addTarefa").on("keyup", function(e) {
-          //13  SIGNIFICA ENTER
-          if (e.keyCode == 13 && $(".addTarefa").val() != "") {
-            let tarefa = $("<div class='tarefa'></div>").text($(".addTarefa").val()
-            );
-            let deletar = $("<i class='fas fa-trash-alt'></i>").click(
-              function() {
-                $(this).parent().remove()                  
-              }
-            );
-
-            tarefa.append(deletar);
-            $(".incompletas").append(tarefa);
-
-            //LIMPAR INPUT
-            $(".addTarefa").val("");
-          }
-        });
-      });
+      
     </script>
   </body>
 </html>
