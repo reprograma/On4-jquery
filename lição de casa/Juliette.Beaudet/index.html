@@ -48,30 +48,21 @@
 
 <script>
     // Declarar as variáveis do Input Nota 1, Nota 2 e Média
-      
-    //const nota1 = Number(document.querySelector(".nota1"));
-    //const nota2 = Number(document.querySelector(".nota2"));
-    //const media = Number(document.querySelector(".media"));
-    //OU
-    let nota1 = $(".nota1");
-    let nota2 = $(".nota2");
-    let media = $(".media");
-      
-
     // Capturar os valores do Input Nota 1, Nota 2 e Média
-    // Dica: usar parseInt para retornar o valor do input um número inteiro * //parseInt("01"); retorna 1
+    // Dica: usar parseInt para retornar o valor do input um número inteiro
 
    $('document').ready(function() {
     $('button').click(function(e) {
        e.preventDefault();
         
-    let inputNota1 = $(".nota1").val();
-    let inputNota2 = $(".nota2").val();
-    // Fazer a média e mostrar no Input Média
+    let inputNota1 = parseInt($(".nota1").val());
+    let inputNota2 = parseInt($(".nota2").val());
+    // Fazer a média 
     let inputMedia = ((inputNota1)+(inputNota2))/2;
     console.log(inputNota1,inputNota2,inputMedia)
-    // Adicionar a variavel inputMedia à div media
-    $(".media").append(inputMedia);
+    // (coloquei um console apenas para controlar o calculo da média, antes de fazê-lo aparecer na div media)
+    // e mostrar no Input Média
+    $(".media").val(inputMedia)
     })
 
     });
