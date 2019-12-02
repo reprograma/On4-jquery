@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Ações de Formulário com jQuery</title>
   </head>
   <body>
@@ -25,7 +25,46 @@
   </body>
 
     <script>
-    
+    // $(document).ready(function(){
+    //   $('#inputNome').keydown(function(){
+    //     $('#inputNome').css('background-color', 'red')
+    //   })
+
+    //   $('#inputEmail').keyup(function(){
+    //     $('#inputEmail').css('background-color','blue')
+    //   })
+    // });
+
+    $(document).ready(function(){
+      $('button').click(function(e){
+        e.preventDefault();
+        let nome= $('#inputNome').val();
+        let email= $('#inputEmail').val();
+        let telefone= $('#inputtelefone').val();
+
+        if (nome == '') {
+            $('.erro1').text('Favor preencher o nome.')
+
+          } else if (email == '') {
+            $('.erro2').text('Favor preencher o e-mail.')
+
+          } else if (telefone == '') {
+            $('.erro3').text('Favor preencher o telefone.')
+
+          } else {
+            alert("Mensagem enviada com sucesso!")
+
+            // Limpar os inputs e os texts
+            $('#inputNome').val('')
+            $('#inputEmail').val('')
+            $('#inputTelefone').val('')
+            $('.erro1').text('')
+            $('.erro2').text('')
+            $('.erro3').text('')
+       }
+      })
+    });
+
     </script>
   </body>
 </html>

@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -21,13 +21,36 @@
       />
       <div class="incompletas">
         <h3>Tarefas</h3>
+        <div class="tarefa">Tarefa<i class= "fas fa-trash-alt"></i>
+        </div>
         
       </div>
 
     </div>
 
-    <script type="text/javascript">
-      
+
+    <script>
+      $(document).ready(function() {
+        $(".addTarefa").on("keyup", function(e) {
+          // 13 significa a tecla Enter
+          if (e.keyCode == 13 && $(".addTarefa").val() != "") {
+            let tarefa = $('<div class="tarefa"></div>').text(
+              $(".addTarefa").val()
+            );
+
+            let deletar = $('<i class="fas fa-trash-alt"></i>').click(
+              function() {
+                $(this).parent().remove();
+              }
+            );
+
+            tarefa.append(deletar);
+            $(".incompletas").append(tarefa);
+
+            $(".addTarefa").val("");
+          }
+        });
+      });
     </script>
   </body>
 </html>

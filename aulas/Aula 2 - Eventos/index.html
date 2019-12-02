@@ -7,7 +7,9 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
     <link rel="stylesheet" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Eventos no JQuery</title>
@@ -15,11 +17,28 @@
   <body>
     <div class="card">
       <h1>Começando com jQuery</h1>
-      <button>Clique aqui</button>
+    <button class=btnEsconderMostrar>Esconder</button>
+    <!-- <button class=btnMostrar>Mostrar</button> -->
     </div>
 
     <script>
-      
+      $(document).ready(function(){
+        $('button').click(function(){
+          $('h1').toggle();
+        })
+        // $('.btnEsconder').click(function(){
+        //   $('h1').hide();
+        // });
+        // $('.btnMostrar').click(function(){
+        //   $('h1').show();
+        // })
+       // $('button').click(function(){
+        //  $('h1').hide();
+        // })
+       // $('button').mouseleave(function(){
+        //$('h1').hide();
+       // })
+      });
     </script>
   </body>
 </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Efeito Browser x Efeito jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Eventos do browser -->
+  </head>
+
+  <style>
+    .container {
+      margin: 100px;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .arrow-up {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: black;
+      width: 50px;
+      height: 50px;
+      display: block;
+      text-decoration: none;
+      border-radius: 35px;
+      display: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .arrow-up img {
+      color: #fff;
+      margin: 0;
+      position: relative;
+      left: 15px;
+      top: 12px;
+      font-size: 19px;
+      transition: all 0.3s ease;
+      width: 20px;
+    }
+    .arrow-up:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .arrow-up:hover img {
+      color: #fff;
+      top: 5px;
+    }
+    
+  </style>
+
+  <body>
+    <div class="container">
+        <img src="img/chevron-arrow-up.png" alt="" />
+      <h1>Efeito Scroll Up</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facere a
+        temporibus fugit pariatur quis, quibusdam sequi itaque unde earum quam
+        animi eveniet quia facilis perferendis molestiae explicabo. Nam,
+        repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente beatae dolor rem provident minus! Quis dignissimos corrupti
+        possimus tempora quasi asperiores iure consequuntur obcaecati nostrum
+        inventore? Rem laborum veniam dolor. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Id explicabo sit totam consequuntur dolore
+        placeat tempore? Unde omnis provident temporibus sint aliquid, dicta
+        quod blanditiis corrupti placeat? Pariatur, totam natus.
+      </p>
+      <div class="arrow-up">
+        <img src="img/chevron-arrow-up.png" alt="" />
+      </div>
+    </div>
+    <script>
+$(window).scroll(function(){
+if($(this).scrollTop() >=500){
+$('.arrow-up').fadeIn(2000)
+} else{
+  $('.arrow-up').fadeOut(2000)
+}
+});
+
+
+
+$(document).ready(function(){
+$(".arrow-up").click(function(){
+$("html,body").animate(
+  {
+scrollTop:0
+  }, 1000
+);
+});
+});
+
+    </script>
+  </body>
+</html>

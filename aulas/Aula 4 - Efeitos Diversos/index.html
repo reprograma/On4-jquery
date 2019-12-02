@@ -14,12 +14,24 @@
       <div class="div1">Efeito Simples</div>
       <div class="div2">Efeito com Slow</div>
       <div class="div3">Efeito com 3s</div>
-      <button class="btn1">Fade Out</button>
-      <button class="btn2">Fade In</button>
+      <button class="btnFadeOut">Fade Out</button>
+      <button class="btnFadeIn">Fade In</button>
     </div>
 
     <script>
-     
+     $(document).ready(function(){
+       $('.btnFadeOut').click(function(){
+         $('.div1').fadeOut();
+         $('.div2').fadeOut('slow');
+         $('.div3').fadeOut(3000);
+       });
+
+       $('.btnFadeIn').click(function(){
+        $('.div1').fadeIn();
+         $('.div2').fadeIn('slow');
+         $('.div3').fadeIn(3000);
+       })
+     });
     </script>
   </body>
 </html>
