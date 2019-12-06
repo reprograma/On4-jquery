@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Cálculo de Média</h1>
+      <form name="calculo" method="post" action="">
+        <p>
+          <input type="text" class="nota1" placeholder="Digitar Nota 1" value="" />
+        </p>
+        <p>
+          <input type="text" class="nota2" placeholder="Digitar Nota 2" value="" />
+        </p>
+        <p>
+          <input type="text" class="media" placeholder="Nota Média" readonly="readonly" value="" />
+        </p>
+        <p>
+          <button class="media ">Calcular Média</button>
+        </p>
+
+        <p> 
+            <button class="limpar"> Limpar </button>
+        </p> 
+      </form>
+    </div>
+   
+     <!--calculo de média--> 
+<!--parte do script-->
+    <script>
+      $(document).ready(function () {
+        $("button.media").click(function (e) {
+          e.preventDefault();
+          var nota1 = parseInt($('.nota1').val());
+          var nota2 = parseInt($('.nota2').val());
+          var media = (nota1 + nota2) / 2;
+
+          $('.media').val(media); 
+        
+        });
+});
+  
+    </script>
+
+  </body>
+
+</html>
