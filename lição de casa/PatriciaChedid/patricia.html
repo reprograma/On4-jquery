@@ -29,11 +29,20 @@
   </div>
 
   <script>
-    // Declarar as variáveis do Input Nota 1, Nota 2 e Média
-         // Capturar os valores do Input Nota 1, Nota 2 e Média
-      // Dica: 8usar parseInt para retornar o valor do input um número inteiro *
+  
+    $(document).ready(function () {
+      $("button").click(function () {
+        event.preventDefault();
+        let inputNota1 = parseInt($(".nota1").val());
+        let inputNota2 = parseInt($(".nota2").val());
+       
+        let inputMedia = ((inputNota1)+(inputNota2))/2;
+      
+        $(".media").val(inputMedia)
 
-      // Fazer a média e mostrar no Input Média
+      });
+    });
+
   </script>
 </body>
 
