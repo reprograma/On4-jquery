@@ -47,12 +47,25 @@
     </div>
 
     <script>
-      // Declarar as variáveis do Input Nota 1, Nota 2 e Média
+        // Declarar as variáveis do Input Nota 1, Nota 2 e Média
 
       // Capturar os valores do Input Nota 1, Nota 2 e Média
       // Dica: 8usar parseInt para retornar o valor do input um número inteiro *
 
       // Fazer a média e mostrar no Input Média
+
+      $(document).ready(function() {
+        $("button").click(function(e) {
+          e.preventDefault();
+            
+          let nota1 = parseInt ($(".nota1").val());
+          let nota2 =  parseInt ($(".nota2").val());
+          let media = (nota1 + nota2) / 2;
+
+          $('.media').val (media);
+         });
+       });
+    
     </script>
   </body>
 </html>
