@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  
+  <div class="container">
+    <h1>Cálculo de Média</h1>
+    <form name="calculo" method="post" action="">
+      <p> Nota 1semestre: <input type="text" class="inputNota1" value="" /></p>
+      <p> Nota 2semestre: <input type="text" class="inputNota2" value="" /></p>
+      <p> Media: <input type="text" class="inputMedia" readonly="readonly" value="" /></p>
+      <p>
+        <button type="submit">Calcular Média</button>
+      </p>
+    </form>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        //pegando as notas dos campos inputs
+        let nota1 = parseInt($(".inputNota1").val());
+        let nota2 = parseInt($(".inputNota2").val());
+        //formula para cálculo de média
+        let media = (nota1 + nota2) / 2;
+
+        //mostra o resultado no input name=media
+        $(".inputMedia").val(media);
+        return false;
+      })
+      })
+  </script>
+</body>
+</html>

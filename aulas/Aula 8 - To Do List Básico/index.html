@@ -21,13 +21,33 @@
       />
       <div class="incompletas">
         <h3>Tarefas</h3>
-        
-      </div>
-
+        <div class="tarefa"> Tarefa <i class= "fas fa-trash-alt"></i>
+        </div>
+        </div>
     </div>
 
-    <script type="text/javascript">
-      
+    <script>
+     $(document).ready(function() {
+        $(".addTarefa").on("keyup", function(e) {
+          // e-pode ser qq coisa 
+          if (e.keyCode == 13 && $(".addTarefa").val() != "") {
+            let tarefa = $('<div class="tarefa"></div>').text(
+              $(".addTarefa").val()
+            ); // 13 é o numero da tecla entrer e se nào esta vazio
+                // let - armazounou a div criada em JQuery + o vlor do txt na variavel tarefa
+            let deletar = $('<i class="fas fa-trash-alt"></i>').click(
+              function() {
+                $(this).parent().remove();
+              }
+            );// inserir o o icone da lixeira dentro da var deletar e 
+              
+            tarefa.append(deletar); //limpar o input apos interir na lista
+            $(".incompletas").append(tarefa); // add a var tarefa a div incompleta
+
+            $(".addTarefa").val("");
+          }
+        });
+      });            
     </script>
   </body>
 </html>
