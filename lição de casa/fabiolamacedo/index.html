@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -47,12 +47,22 @@
     </div>
 
     <script>
-      // Declarar as variáveis do Input Nota 1, Nota 2 e Média
+    $(document).ready (function(){
+$ ("button").click(function(e){
+  e.preventDefault ();
+  let nota1 =parseInt( $(".nota1").val ())
+  let nota2 =  parseInt ($ (".nota2").val ())
+  let media =  $ (".media").val ()
+  totalmedia = (nota1 + nota2) /2
+   $ (".media").val (totalmedia)
+   console.log (totalmedia)
+   $ (".nota1").val ("") 
+$ (".nota2").val ("")
+})
 
-      // Capturar os valores do Input Nota 1, Nota 2 e Média
-      // Dica: 8usar parseInt para retornar o valor do input um número inteiro *
 
-      // Fazer a média e mostrar no Input Média
+      })
+     
     </script>
   </body>
 </html>
