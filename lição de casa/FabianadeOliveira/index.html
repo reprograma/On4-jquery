@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Cálculo de Média</h1>
+      <form name="calculo" method="post" action="">
+        <p>
+          <input type="text"
+          name="nota1"
+            class="nota1"
+            placeholder="Digitar Nota 1"
+            value=""
+          />
+        </p>
+        <p>
+          <input type="text"
+          name="nota2"
+            class="nota2"
+            placeholder="Digitar Nota 2"
+            value=""
+          />
+        </p>
+        <p>
+          <input type="text"
+          name="media"
+            class="media"
+            placeholder="Nota Média"
+            readonly="readonly"
+            value=""
+          />
+        </p>
+        <p>
+          <button>Calcular Média</button>
+        </p>
+      </form>
+    </div>
+
+    <script>
+      
+$(document).ready( function() {
+  $('button').click(function(){
+
+
+    var nota1 = 0, nota2 = 0, media = 0;
+
+    nota1 = parseInt($("input[name=nota1]").val());
+    nota2 = parseInt($("input[name=nota2]").val());
+
+    media	= (nota1+nota2) /2;
+      
+      $("input[name=media]").val(media);
+      
+      return false;
+
+
+
+//       $('document').ready(function() {
+//     $('button').click(function(e){
+//       e.preventDefault();
+      // let nota1 = $('#inputnota1').val();
+      // let nota2 = $('#inputnota2').val();
+      // let media = $('#inputmedia').val();
+
+//       $(".addNota1").on("keyup",function(e){
+//         if()
+//         var media = $("#media");
+//     media.focusout( function(){
+//     alert(media.val());
+//     $(this).val();
+// });
+//       })
+
+
+//     })
+// });
+
+
+
+    // let nota1 = $("input[name=nota1]").val();
+    //   let nota2 = $("input[nome=nota2]").val();
+    //   let media = $('#inputmedia').val();
+	
+		// 	// if(nota1 == "") nota1 = 0;
+		// 	// if(nota2 == "") nota2 = 0;
+      
+      
+   
+
+		// 	$('#media').val(media);
+    // })
+    // $(".addmedia").val(media);
+  });
+	});
+      // Declarar as variáveis do Input Nota 1, Nota 2 e Média
+
+      // Capturar os valores do Input Nota 1, Nota 2 e Média
+      // Dica: 8usar parseInt para retornar o valor do input um número inteiro *
+
+      // Fazer a média e mostrar no Input Média
+    </script>
+  </body>
+</html>
