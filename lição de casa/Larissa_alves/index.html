@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Cálculo de Média</h1>
+      <form name="calculo" method="post" action="">
+        <p>
+          <input
+            type="text"
+            class="nota1"
+            placeholder="Digitar Nota 1"
+            value=""
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            class="nota2"
+            placeholder="Digitar Nota 2"
+            value=""
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            class="media"
+            placeholder="Nota Média"
+            readonly="readonly"
+            value=""
+          />
+        </p>
+        <p>
+          <button>Calcular Média</button>
+        </p>
+      </form>
+    </div>
+
+    <script>
+      // Declarar as variáveis do Input Nota 1, Nota 2 e Média
+
+      // Capturar os valores do Input Nota 1, Nota 2 e Média
+      // Dica: 8usar parseInt para retornar o valor do input um número inteiro *
+
+      // Fazer a média e mostrar no Input Média
+
+      $(document).ready(function() {
+        $('button').click(function(e) {
+          e.preventDefault()
+          let inputNota1 = parseInt($('.nota1').val())
+          let inputNota2 = parseInt($('.nota2').val())
+          let inputMedia = ((inputNota1 + inputNota2) / 2)
+
+
+          $('.media').val(inputMedia)
+
+          console.log(inputNota1, inputNota2, inputMedia)
+
+        })
+      })
+    </script>
+  </body>
+</html>
